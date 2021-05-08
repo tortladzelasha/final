@@ -1,0 +1,20 @@
+/* header-styles */
+.header-wrapper {
+    background-color: aliceblue;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+}
+ul {
+    display: flex;
+    width: 500px;
+    justify-content: space-between;
+}
+li {
+    color: #303134;
+    font-size: 15.74px;
+    font-family: 'Raleway', sans-serif;
+}
