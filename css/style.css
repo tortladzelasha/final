@@ -18,6 +18,77 @@ header {
     font-size: 16px;
     font-family: 'Raleway', sans-serif;
 }
+/* service-styling */
+.service-wrapper {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    /* align-items: center; */
+    margin: 75px auto;
+}
+.service-title-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.service-box-conatiner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.service-box {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 270px;
+    /* height: 350px; */
+    /* box-shadow:
+  0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+  0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+  0 12.5px 10px rgba(0, 0, 0, 0.06),
+  0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+  0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+  0 10px 8px rgba(0, 0, 0, 0.12); */
+  margin-top: 50px;
+}
+.box-title {
+    color: #1A1A1B;
+    font-size: 18px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    margin: 22px auto 8px;
+}
+.box-description {
+    color: #8D8D8D;
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.service {
+    color: #8D8D8D;
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+.service-title {
+    color: #1A1A1B;
+    font-size: 26px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+.service-text {
+    color: #8D8D8D;
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    margin-top: 15px;
+}
 /* video-styling */
 .video-wrapper {
     background-image: url(../image/video-img.jpg);
@@ -132,8 +203,8 @@ header {
   0 12.5px 10px rgba(0, 0, 0, 0.06),
   0 22.3px 17.9px rgba(0, 0, 0, 0.072),
   0 41.8px 33.4px rgba(0, 0, 0, 0.086),
-  0 10px 8px rgba(0, 0, 0, 0.12)
-;
+  0 10px 8px rgba(0, 0, 0, 0.12);
+  margin-bottom: 50px;
 }
 .offer-box {
     position: relative;
