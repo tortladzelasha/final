@@ -18,6 +18,10 @@ header {
     font-size: 15.74px;
     font-family: 'Raleway', sans-serif;
 }
+/* map-styling */
+iframe {
+    width: 100%;
+}
 /* footer-styles */
 footer {
     background-color: #141418;
