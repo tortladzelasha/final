@@ -8,13 +8,46 @@ header {
     align-items: center;
     padding: 30px;
 }
-ul {
+.navigation-ul {
     display: flex;
     width: 500px;
     justify-content: space-between;
 }
-li {
+.navigation-li {
     color: #303134;
     font-size: 15.74px;
     font-family: 'Raleway', sans-serif;
+}
+/* footer-styles */
+footer {
+    background-color: #141418;
+}
+.footer-wrapper {
+    border-bottom: white;
+}
+.footer-navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 45px;
+}
+.footer-li {
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    padding-bottom: 10px;
+}
+.footer-box-title {
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.footer-copyright {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding-bottom: 10px;
 }
