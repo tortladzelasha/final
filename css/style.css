@@ -1,7 +1,7 @@
 /* header-styles */
 
-.header-wrapper{
-    background: whitesmoke;
+.header-wraper{
+    background:white;
     padding: 30px 0;
     position: relative;
 }
@@ -17,6 +17,9 @@
 a{
     color: #303134;
     padding: 7px 15px;
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
 }
 ul{
     padding: 20px 0;
@@ -47,7 +50,7 @@ ul{
     text-align: left;
   }
   .burger-icon{
-    color: #fff;
+    color: #303134;
     display: block;
     font-size: 30px;
     position: absolute;
@@ -66,7 +69,6 @@ ul{
     display: flex;
   } 
 }
-
 
 
 /* aboutus-styling */
