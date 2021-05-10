@@ -160,17 +160,21 @@ ul{
     align-items: center;
     width: 270px;
     /* height: 350px; */
-    /* box-shadow:
+    box-shadow:
   0 2.8px 2.2px rgba(0, 0, 0, 0.034),
   0 6.7px 5.3px rgba(0, 0, 0, 0.048),
   0 12.5px 10px rgba(0, 0, 0, 0.06),
   0 22.3px 17.9px rgba(0, 0, 0, 0.072),
   0 41.8px 33.4px rgba(0, 0, 0, 0.086),
-  0 10px 8px rgba(0, 0, 0, 0.12); */
+  0 10px 8px rgba(0, 0, 0, 0.12);
   margin-top: 50px;
 }
+.service-box:hover {
+    transform: scale(1.1,1.1);
+    transition-duration: 0.5s;
+}
 .box-title {
-    color: #1A1A1B;
+    color: #4B54FA;
     font-size: 18px;
     font-family: 'Raleway', sans-serif;
     font-weight: 600;
@@ -330,6 +334,10 @@ ul{
     position: relative;
     width: 267px;
 }
+.offer-box:hover {
+    transform: scale(1.1,1.1);
+    transition-duration: 0.5s;
+}
 .offer-box-heading {
     position: absolute;
     background-color: #FED701;
@@ -391,6 +399,8 @@ footer {
     display: flex;
     justify-content: center;
     flex-direction: column;
+    align-items: center;
+    text-align: center;
     margin-top: 54px;
     margin-bottom: 67px;
     color: white;
