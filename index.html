@@ -14,29 +14,37 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
     <title>Home Page</title>
+    <script src="https://kit.fontawesome.com/6de6aa5275.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <!-- header-start -->
-    <div class="header-wrapper wrap">
-        <header>
-            <div class="logo">
+    <header class="header-wrapper wrap">
+        <div class="wrapper">
+            <ul class="logo">
                 <a class="tourism" href="index.html"> 
                 <img src="image/1.01_Logo.svg" alt="Tourism">
                 </a>
+            </ul>
+            <ul id="menu" class="menu-ul">
+                <li> <a class="nav-a" href="index.html"> HOME </a> </li>
+                <li> <a class="nav-a" href="aboutus.html"> ABOUT US </a> </li>
+                <li> <a class="nav-a" href="service.html"> OUR SERVICES </a></li>
+                <li> <a class="nav-a" href="package.html"> TOUR PACKAGE </a></li>
+            </ul>
+            <ul id="socicon" class="social-icons">
+                <li><a href="https://facebook.com"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="https://instagram.com"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="https://youtube.com"><i class="fab fa-youtube"></i></a></li>
+            </ul>
+            
+            <div id="burger-navigation" class="burger-icon">
+                <i class="fas fa-bars"></i>
             </div>
-
-            <nav>
-                <ul class="navigation-ul">
-                    <li class="navigation-li"> <a href="index.html"> HOME </a> </li>
-                    <li class="navigation-li"> <a href="aboutus.html"> ABOUT US </a> </li>
-                    <li class="navigation-li"> <a href="service.html"> OUR SERVICES </a></li>
-                    <li class="navigation-li"> <a href="package.html"> TOUR PACKAGE </a></li>
-                </ul>
-            </nav>
-         </header>
-    </div>
+    </header>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="js/script.js"></script>
     <!-- header-end -->
     <!-- slideshow-start -->
     <section class="slideshow">
@@ -141,7 +149,7 @@
         <div class="content-wrapper">
             <div class="offer-title-container">
                 <h3 class="offer">WE OFFER</h3>
-                <a class="offer-title" href="#">Popular Tour Package</a>
+                <a class="offer-title" href="package.html">Popular Tour Package</a>
                 <!-- <h2 class="offer-title">Popular Tour Package</h2> -->
                 <img src="image/shape1.svg" alt="shape">
             </div>
@@ -151,7 +159,7 @@
                     <div class="offer-content">
                         <img class="offer-image" src="image/greece.jpg" alt="greece">
                         <p class="offer-price">$299/person</p>
-                        <a class="offer-box-title" href="#">Blue Beauty of Greece</a>
+                        <a class="offer-box-title" href="package.html">Blue Beauty of Greece</a>
                         <!-- <p class="offer-box-title">Blue Beauty of Greece</p> -->
                         <p class="offer-length">5 Days / 6 Night</p>
                     </div>
@@ -162,7 +170,7 @@
                     <div class="offer-content">
                         <img class="offer-image" src="image/phuket.jpg" alt="phuket">
                         <p class="offer-price">$178/person</p>
-                        <a class="offer-box-title" href="#">Nature of Phuket</a>
+                        <a class="offer-box-title" href="package.html">Nature of Phuket</a>
                         <!-- <p class="offer-box-title">Nature of Phuket</p> -->
                         <p class="offer-length">3 Days / 4 Night</p>
                     </div>
@@ -173,7 +181,7 @@
                     <div class="offer-content">
                         <img class="offer-image" src="image/paris.jpg" alt="paris">
                         <p class="offer-price">$1111/person</p>
-                        <a class="offer-box-title" href="#">World Tour of Paris</a>
+                        <a class="offer-box-title" href="package.html">World Tour of Paris</a>
                         <!-- <p class="offer-box-title">World Tour of Paris</p> -->
                         <p class="offer-length">7 Days / 8 Night</p>
                     </div>
@@ -195,47 +203,65 @@
             <div class="footer-navigation">
                 <div class="footer-box">
                     <h2 class="footer-box-title">Quick Links</h2>
-                    <ul class="footer-ul">
-                        <li class="footer-li">
+                    <div class="footer-ul">
+                        <div class="footer-li">
                             <a href="index.html"> Home</a>
-                        </li>
-                        <li class="footer-li">
+                        </div>
+                        <div class="footer-li">
                             <a href="aboutus.html">About Us</a>
-                        </li>
-                        <li class="footer-li">
+                        </div>
+                        <div class="footer-li">
                             <a href="service.html">Our Services</a>
-                        </li>
-                        <li class="footer-li">
+                        </div>
+                        <div class="footer-li">
                             <a href="#">Help</a>
-                        </li>
-                    </ul>
+                        </div>
+                    </div>
                 </div>
                 <div class="footer-box">
                     <h2 class="footer-box-title">Address</h2>
-                    <ul class="footer-ul">
-                        <li class="footer-li">
+                    <div class="footer-ul">
+                        <div class="footer-li">
                             <a href="https://www.google.com/maps?ll=44.531276,-87.923761&z=14&t=m&hl=ka&gl=GE&mapclient=embed&cid=15230051948516481469">14, 1 Ellis bridge ST, </a>
-                        </li>
-                        <li class="footer-li">
+                        </div>
+                        <div class="footer-li">
                             <a href="https://www.google.com/maps?ll=44.531276,-87.923761&z=14&t=m&hl=ka&gl=GE&mapclient=embed&cid=15230051948516481469">Auckland 3500, Australia</a>
-                        </li>
-                        <li class="footer-li">
+                        </div>
+                        <div class="footer-li">
                             <a href="tel:+1234567890">+1234567890</a>
-                        </li>
-                        <li class="footer-li">
+                        </div>
+                        <div class="footer-li">
                             <a href="mailto:contactus@demo.com?subject=mail subject">contactus@demo.com</a>
-                        </li>
-                    </ul>
+                        </div>
+                    </div>
                 </div>
-                <div class="footer-box1">
+                <!-- <div class="footer-box1">
                     <h2 class="footer-box-title1"> Subscribe to our newsletter </h2>
                     <div class="subscribe">
                         <img class="email" src="image/email.png" alt="email-box">
                     </div>
-                </div>
+                </div> -->
+                <form action="action_page.php">
+                    <div class="container">
+                      <h2 class="suscribe">Subscribe to our Newsletter</h2>
+                    </div>
+                  
+                    <div class="container">
+                      <input type="text" placeholder="Email address" name="mail" required>
+                      <label>
+                        <input type="checkbox" checked="checked" name="subscribe"> Daily Hot Tours
+                      </label>
+                    </div>
+                  
+                    <div class="container">
+                      <input type="submit" value="Subscribe">
+                    </div>
+                  </form>
             </div>
         <div class="footer-copyright">
             <p class="footer-copyright1">Tourism©All Rights Reserved</p>
         </div>
     </footer>
     <!-- footer-end -->
+</body>
+</html>

@@ -1,91 +1,74 @@
 /* header-styles */
-.back {
-    background-image: url(../image/banner1.jpeg);
+
+.header-wrapper{
+    background: whitesmoke;
+    padding: 30px 0;
+    position: relative;
+}
+.wrapper{
+    max-width: 1170px;
     width: 100%;
-    height: 500px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    margin: 0 auto;
     display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-}
-.back-package {
-    background-image: url(../image/banner2.jpeg);
-    width: 100%;
-    height: 500px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-}
-.back-about {
-    background-image: url(../image/banner3.jpeg);
-    width: 100%;
-    height: 500px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-}
-.head-wrap {
-    background-color: white;
-}
-.heading {
-    color: white;
-    font-size: 26px;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 600;
-    margin-bottom: 6px;
-}
-.heading2 {
-    color: white;
-    font-size: 40px;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 600;
-    margin-bottom: 190px;
-}
-.heading3 {
-    margin-bottom: 140px;
-    color: white;
-    font-size: 26px;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 600;
-    text-align: center;
-}
-.about {
-    margin-bottom: 190px;
-    color: white;
-    font-size: 40px;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 600;
-}
-.wrap {
-    background-color: aliceblue;
-    position: fixed;
-    width: 100%;
-    z-index: 1;
-}
-header {
-    display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    padding: 30px;
 }
-.navigation-ul {
-    display: flex;
-    width: 500px;
-    justify-content: space-between;
-}
-.navigation-li {
+a{
     color: #303134;
-    font-size: 16px;
-    font-family: 'Raleway', sans-serif;
+    padding: 7px 15px;
 }
+ul{
+    padding: 20px 0;
+    display: flex;
+}
+.burger-icon {
+    display: none;
+}
+
+
+
+
+/* Responsive */
+@media (max-width: 768px){
+  .wrapper, 
+  ul{
+    display: block;
+    text-align: center;
+  }   
+  .nav-a{
+    display: block;
+  }  
+  .social-icons{
+    display: flex;
+    justify-content: center; 
+  } 
+  .logo{
+    text-align: left;
+  }
+  .burger-icon{
+    color: #fff;
+    display: block;
+    font-size: 30px;
+    position: absolute;
+    top: 40px;
+    right: 30px;
+    cursor:pointer;
+  }
+  .menu-ul,
+  .social-icons{
+    display: none;
+  }   
+  .menu-ul.open-menu{
+    display: block;
+  } 
+  .social-icons.open-socicon{
+    display: flex;
+  } 
+}
+
+
+
 /* aboutus-styling */
 .aboutus {
     color:#1A1A1B;
@@ -408,6 +391,7 @@ footer {
     flex-direction: column;
     margin-top: 54px;
     margin-bottom: 67px;
+    color: white;
 }
 .footer-li {
     color: white;
@@ -415,6 +399,7 @@ footer {
     font-weight: 500;
     font-size: 16px;
     padding-bottom: 10px;
+    color: white;
 }
 .footer-box-title {
     color: white;
@@ -430,4 +415,41 @@ footer {
     text-align: center;
     color: white;
     padding-bottom: 10px;
+}
+  
+  /* Add some padding and a grey background color to containers */
+.container {
+    padding: 20px;
+}
+  
+  /* Style the input elements and the submit button */
+input[type=text], input[type=submit] {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    display: inline-block;
+    /* border: 1px solid #ccc; */
+}
+  
+  /* Add margins to the checkbox */
+input[type=checkbox] {
+    margin-top: 1px;
+    color: white;
+}
+  
+  /* Style the submit button */
+input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    border: none;
+}
+  
+input[type=submit]:hover {
+    opacity: 0.8;
+}
+.checkbox {
+    color: white;
+}
+.subscribe {
+    color: white;
 }
